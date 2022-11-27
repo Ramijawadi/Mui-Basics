@@ -2,8 +2,9 @@
 import './App.css';
 import Drawer from './components/Drawer';
 import MuiButton from './components/MuiButton';
-import TextField from './components/TextField';
+import Text from './components/TextField';
 import MuiTypography from './components/MuiTypography';
+import Notes from './pages/Notes';
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
     <div className="App">
       <MuiTypography />
       <MuiButton />
-      <TextField />
+     <Text />
       <Drawer />
+      <Notes/>
     </div>
   );
 }

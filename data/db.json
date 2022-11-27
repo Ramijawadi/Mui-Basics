@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "title": "rami jawadi",
+      "description": "hello every body this is jawadi rami",
+      "category": "sport",
+      "id": 1
+    },
+    {
+      "title": "aymen jawadi",
+      "description": "hello every body this is jawadi aymen",
+      "category": "food",
+      "id": 2
+    },
+    {
+      "title": "mouhamed salah",
+      "description": "hello every body this is mouhamed salah",
+      "category": "todos",
+      "id": 3
+    },
+    {
+      "title": "ali salah",
+      "description": "hello every body this is ali salah",
+      "category": "football",
+      "id": 4
+    }
+  ]
+}

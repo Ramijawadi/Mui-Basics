@@ -1,25 +1,18 @@
-// import { Stack, TextField } from '@mui/material'
-
-// const TextField = () => {
-//     return (
-//         <Stack spacing={4}>
-//             <Stack direction='row' spacing={2}>
-//                 <TextField label='Name' variant='outlined' />
-//                 <TextField label='Name' variant='outlined' />
-//                 <TextField label='Name' variant='outlined' />
-//          </Stack>
-
-
-
-
-
-         import * as React from 'react';
+ import * as React from 'react';
 import Switch from '@mui/material/Switch';
+import TextField from '@mui/material/TextField'
+import { Button, Typography } from '@mui/material';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { Container } from '@mui/system';
+
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-export default function TextField() {
+export default function Text() {
+
+ 
   return (
+    <>
     <div>
       <h1> switch </h1>
       
@@ -27,6 +20,48 @@ export default function TextField() {
       <Switch {...label} />
      
     </div>
+
+<Container>
+
+  <Typography
+   variant="h6"
+   color="textSecondary"
+   component="h2"
+   gutterBottom
+  
+  >
+Createa New Note
+
+  </Typography>
+
+<form noValidate autoCapitalize='off'>
+
+<TextField
+label="note title"
+variant="outlined"
+color="secondary"
+fullWidth
+required 
+
+
+
+
+/>
+
+</form>
+
+<Button
+onClick={()=> console.log('you clicked me')}
+type="submit"
+color="secondary"
+variant="contained"
+endIcon={<KeyboardArrowRightIcon />}
+
+>
+submit
+</Button>
+</Container>
+</>
   );
 }
 
